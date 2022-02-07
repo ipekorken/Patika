@@ -1,14 +1,23 @@
 const express = require("express");
+const ejs = require("ejs");
 
 const app = express();
 
+app.set("view engine", "ejs");
+
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
-  const photo = {
-    id: 1,
-    title: "Blog Title",
-    description: "Blog description",
-  };
-  res.send(photo);
+  res.render("index");
+});
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+app.get("/post", (req, res) => {
+  res.render("post");
+});
+app.get("/add_post", (req, res) => {
+  res.render("add_post");
 });
 
 const port = 3000;
