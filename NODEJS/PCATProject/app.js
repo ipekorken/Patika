@@ -12,6 +12,9 @@ app.set("view engine", "ejs");
 //MIDDLEWARES
 app.use(express.static("public")); //express.static => a middleware function in express.
 
+app.use(express.urlencoded({ extended: true })); // => aldığımız requesti sonlandırmamıza yardımcı oldu. url'deki datayı okumamızı sağlar.
+app.use(express.json()); // => aldığımız requesti sonlandırmamıza yardımcı oldu. url'deki datayı json formatına dönüştürmemizi sağlar.
+
 //ROUTES
 app.get("/", (req, res) => {
   res.render("index");
@@ -23,6 +26,11 @@ app.get("/about", (req, res) => {
 
 app.get("/add", (req, res) => {
   res.render("add");
+});
+
+app.post("/photos", (req, res) => {
+  console.log(req.body);
+  res.redirect("/"); // tekrar anasayfaya dönelim dedik.
 });
 
 const port = 3000;
