@@ -1,0 +1,59 @@
+<!--Görsele Link Vermek
+Görsele link vermek için imgtag'i a taginin içerisinde kullanılır. Yönlendirilmek istenen yerin URL'i a taginin href özelliğine yazılır. Görsel ise a taginin açıklama kısmına eklenir.
+-->
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width: 42px; height: 42px" />
+</a>
+
+<!--
+  map ve area
+Görselleriniz hyperlink atamanız durumunda görselin tüm alanı link alanı haline dönüşecektir. Görselin herhangi bir yerine tıklanılması durumunda görsel sizi tanımlanan bağlantıya gönderecektir. <img> etiketleri için kullanılan <map> ve <area> etiketleri ile resmin içindeki koordinatlarla belirlediğimiz bir alanı sadece link haline getirebiliriz. Eklediğimiz <area> etiketi kadar belirlenen alanı bir resim üzerinden birçok bağlantıya link verebiliriz.
+
+Örneğin Instagram'da bazı satıcılarda gördüğünüz bir insan fotoğraf üzerinde pantolon ve ayakkabının ürün linklerini ayrı ayrı vermek isterseniz kullanabilirsiniz.
+-->
+<html>
+  <body>
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" />
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm" />
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" />
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm" />
+    </map>
+  </body>
+</html>
+
+<!--
+  onload Event'i Kullanımı
+Bu olay görsel yüklenmesi tamamlandığında çalışacak fonksiyonu belirler. Herhangi bir nedenle görsel yüklenemezse ya da belirtilen adreste resim yoksa fonksiyon çalışmaz.
+
+Aşağıdaki örnekte görsel yüklenmesi tamamlandığında resimYuklendi() fonksiyonu çalışacak ve ekrana Resim Yüklendi. uyarısı JavaScript tarafından bastırılacak. 
+-->
+<html>
+  <body>
+    <img src="resim.jpg" onload="resimYuklendi()" />
+  </body>
+
+  <script>
+    function resimYuklendi() {
+      alert('Resim yüklendi.');
+    }
+  </script>
+</html>
+
+<!--
+  picture Elementi ile Kullanım
+HTML5 ile gelen picture elementi web sayfamızda responsive image'ler kullanmamız konusunda büyük kolaylıklar sağlıyor. Bir tane img ve birden fazla source içerebilir. picture tagi ekran boyutlarına göre birden çok source kulllanmamızı sağlar bu sayede ekran boyutu değiştikçe farklı image'leri kullanabilirsiniz.
+
+Örnek: Burada ekran genişliğinin 800 pikselden küçük olduğu durumlarda başka diğer koşullarda ise başka bir görsel kullanılacak.
+-->
+<picture>
+  <source
+    srcset="
+      https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png
+    "
+    media="(min-width: 800px)"
+  />
+
+  <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+</picture>
