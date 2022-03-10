@@ -1,0 +1,44 @@
+<!--
+  Günümüzde birçok HTML sayfası semantik elementler ve 10-12 adet semantik olmayan etiket ile oluşturulabilir.
+    h1 - Başlık
+    p - Paragraf
+    i / em - Eğik / Vurgulu Yazı
+    b / strong - Kalın / Koyu Yazı
+    a - Link
+    ul & li  - Sırasız liste ve liste elemanı
+    blockquote - Alıntı
+    hr - Yatay çizgi ekleme
+    img - Görsel
+    div - Bölme 
+-->
+
+<!--
+  Asıl koda dönüşmeden önceki Emmet yapısı:
+-->
+<!doctype html>
+<html lang ="en">
+<head>
+  <title>Demo</title>
+</head>
+<body>
+  ul#nav>li.item$*4>a{Item $}
+</body>
+</html>
+
+<!--
+  Emmet sonrası, yani ul#nav>li.item$*4>a{Item $} bu ifadeyi yazıp entera basınca:
+-->
+<!doctype html>
+<html lang ="en">
+<head>
+  <title>Demo</title>
+</head>
+<body>
+  <ul id="nav>
+    <li class="item1"><a href="">Item 1</a></li>
+    <li class="item2"><a href="">Item 2</a></li>
+    <li class="item3"><a href="">Item 3</a></li>
+    <li class="item4"><a href="">Item 4</a></li>
+	</ul>
+</body>
+</html>
