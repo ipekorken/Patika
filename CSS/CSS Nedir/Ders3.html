@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div
+      style="
+        border-width: 7px;
+        border-style: ridge;
+        border-color: rgb(209, 201, 153);
+        background-color: rgba(93, 108, 114, 0.801);
+        text-align: center;
+        color: rgb(236, 232, 217);
+      "
+    >
+      <h2>Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet consectetuer</p>
+    </div>
+  </body>
+</html>
+<!--
+  External CSS Kullanımı
+Yukarıda bahsettiğimiz gibi External CSS, normal HTML dosyanızdan bağımsız bir dosyadır ve .css uzantılıdır. CSS dosyanızı oluşturduktan sonra mutlaka HTML dosyanıza linklemeniz gerekir. Yoksa CSS dosyanız işlevsiz kalacak ve HTML sayfanızda yaptığınız değişiklikleri göremeyeceksiniz. Hadi gelin bir de örnek üzerinde görelim.
+
+.css uzantılı dosyamızı oluşturduktan sonra içine kodlarımızı bu şekilde yazıyoruz:
+-->
+<!--
+body {
+  background-color: #f7cac9;
+}
+
+.firstDiv, .secondDiv, .thirdDiv {
+  border: 7px outset gold;
+  background-color: lightblue;
+  text-align: center;
+}
+-->
+<!--
+  Daha sonra HTML sayfamıza geri dönüyoruz ve yazdığımız bu External CSS kodunu <head> bölümüne aşağıdaki gibi linkliyoruz.
+    <link rel="stylesheet" href="style.css" />
+-->
+
+<!--
+  Internal CSS Kullanımı
+Internal CSS, stil kodlarının direk HTML dosyasının içinde <head> bölümünde kullanıldığı bir yöntemdir. <head> bölümünün içinde bir <style> etiketi açtıktan sonra içine gerekli CSS kodlarını yazabilirsiniz.
+
+Örnek vermek gerekirse; kodunuz şu şekilde görünecektir:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #f7cac9;
+}
+
+.firstDiv {
+  border: 7px outset gold;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="firstDiv">
+  <h2>Lorem ipsum</h2>
+  <p>Lorem ipsum dolor sit amet consectetuer</p>
+</div>
+</body>
+</html>
+-->
+
+<!--
+  Inline CSS Kullanımı
+Inline yani satır içi stiller, doğrudan HTML kodunuzdaki herhangi bir öğeye uygulanır. Stil niteliği ve ardından normal CSS özellikleri bir HTML etiketi içinde belirtilir. Kullanımı aşağıdaki örnekte gösterildiği gibidir:
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div style="border-width:7px; border-style:outset; border-color:gold; background-color:lightblue; text-align:center;">
+  <h2>Lorem ipsum</h2>
+  <p>Lorem ipsum dolor sit amet consectetuer</p>
+</div>
+</body>
+</html>
+-->

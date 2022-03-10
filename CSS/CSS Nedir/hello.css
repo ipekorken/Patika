@@ -1,0 +1,19 @@
+h1 {
+  font-size: 18pt;
+  color: tomato;
+}
+
+p {
+  font-size: 12pt;
+  color: rosybrown;
+}
+
+.mainTxtClass {
+  color: teal;
+  font-size: 9pt;
+  background-color: aquamarine;
+}
+
+body {
+  background-color: rgb(187, 179, 187);
+}

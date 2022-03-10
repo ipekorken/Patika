@@ -1,0 +1,23 @@
+body {
+  background-color: gainsboro;
+}
+
+.titleDivStyle {
+  text-align: center;
+}
+
+.titleStyle {
+  color: crimson;
+}
+
+.navHeaderStyle {
+  height: 30pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navLiStyle {
+  font-size: 12pt;
+  color: crimson;
+  margin-right: 10pt;
+}
