@@ -1,5 +1,5 @@
 body {
-  background-color: gainsboro;
+  background-color: rgb(243, 235, 235);
 }
 
 .titleDivStyle {
@@ -20,4 +20,39 @@ body {
   font-size: 12pt;
   color: crimson;
   margin-right: 10pt;
+}
+.p1DivStyle {
+  text-align: center;
+}
+.p1TxtStyle {
+  color: black;
+  font-size: 13pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subTitleDivStyle {
+  text-align: center;
+}
+.subTitleStyle {
+  color: rgb(33, 177, 221);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p2DivStyle {
+  text-align: center;
+}
+.p2TxtStyle {
+  color: rgb(75, 153, 184);
+  font-size: 10pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.listDivStyle {
+  display: flex;
+  height: 80pt;
+  justify-content: center;
+}
+.listContainer {
+}
+.listTxtStyle {
+  color: black;
+  font-size: 12pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

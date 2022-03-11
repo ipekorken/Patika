@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(243, 235, 235);
+}
+
+.titleDivStyle {
+  text-align: center;
+}
+
+.titleStyle {
+  color: crimson;
+}
+
+.navHeaderStyle {
+  height: 30pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navLiStyle {
+  font-size: 12pt;
+  color: crimson;
+  margin-right: 10pt;
+}
+.subTitleDivStyle {
+  text-align: center;
+}
+.subTitleStyle {
+  color: rgb(33, 177, 221);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.listDivStyle {
+  display: flex;
+  justify-content: center;
+}
+.liImgStyle {
+}
+.liTxtStyle {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10pt;
+}

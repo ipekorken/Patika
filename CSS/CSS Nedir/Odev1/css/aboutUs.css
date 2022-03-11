@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(243, 235, 235);
+}
+
+.titleDivStyle {
+  text-align: center;
+}
+
+.titleStyle {
+  color: crimson;
+}
+
+.navHeaderStyle {
+  height: 30pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navLiStyle {
+  font-size: 12pt;
+  color: crimson;
+  margin-right: 10pt;
+}
+.subTitleDivStyle {
+  text-align: center;
+}
+.subTitleStyle {
+  color: rgb(33, 177, 221);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subTitle2DivStyle {
+}
+.subTitle2Style {
+  color: rgb(75, 153, 184);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p0DivStyle {
+}
+.p0TxtStyle {
+  color: black;
+  font-size: 12pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p1DivStyle {
+}
+.p1TxtStyle {
+  color: black;
+  font-size: 10pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p2DivStyle {
+}
+.p2TxtStyle {
+  color: black;
+  font-size: 10pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
