@@ -1,0 +1,142 @@
+.headerClass {
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.headerLeftDivClass {
+  align-items: center;
+  display: flex;
+  width: 50%;
+}
+a {
+  text-decoration: none;
+  color: #73767acb;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 600;
+}
+.headerBtnMarginRight {
+  margin-right: 10px;
+}
+.headerRightDivClass {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+.appBtnImg {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+}
+.signBtn {
+  display: flex;
+  background-color: dodgerblue;
+  border-radius: 3px;
+  height: 25px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.signTxt {
+  color: white;
+}
+.footerClass {
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  align-items: center;
+  justify-self: end;
+  background-color: #f2f2f2;
+  margin-top: 390px;
+}
+.footerLeftDivClass {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  padding-left: 20px;
+}
+.footerBtnMarginRight {
+  margin-right: 10px;
+}
+.footerRightDivClass {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  padding-right: 20px;
+}
+.logoDivClass {
+  display: flex;
+  justify-content: center;
+  margin-top: 270px;
+}
+.searchBarContainer {
+  margin-top: 20px;
+}
+.searchTitleDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.searchInputDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#searchId {
+  width: 480px;
+  height: 25px;
+  border-radius: 20px;
+  border-color: #f2f2f294;
+  border-style: outset;
+  border-width: 1px;
+  padding-left: 20px;
+  outline: none;
+}
+.searchBtnDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+.searchBtn {
+  height: 30px;
+  border-width: 1px;
+  border-radius: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #73767acb;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 600;
+  border-style: none;
+  margin-right: 10px;
+}
+.searchBtn:hover {
+  border-style: solid;
+  border-color: #bdb9b9;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.feelBtn {
+  height: 30px;
+  border-width: 1px;
+  border-radius: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #73767acb;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 600;
+  border-style: none;
+}
+.feelBtn:hover {
+  border-style: solid;
+  border-color: #bdb9b9;
+  border-width: 1px;
+  border-radius: 5px;
+}
