@@ -140,3 +140,15 @@ a {
   border-width: 1px;
   border-radius: 5px;
 }
+.searchImgClass {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  margin-left: -230px;
+}
+.voiceImgClass {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-left: 230px;
+}
